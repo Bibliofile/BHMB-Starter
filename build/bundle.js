@@ -2,7 +2,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@bhmb/bot')) :
   typeof define === 'function' && define.amd ? define(['@bhmb/bot'], factory) :
   (global = global || self, factory(global['@bhmb/bot']));
-}(this, function (bot) { 'use strict';
+}(this, (function (bot) { 'use strict';
 
   var message = "Extension launched!\n";
 
@@ -14,5 +14,5 @@
       ui.notify('It works!');
   });
 
-}));
+})));
 //# sourceMappingURL=bundle.js.map
